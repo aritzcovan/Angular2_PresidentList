@@ -1,0 +1,33 @@
+{
+  "name": "angular2-presidentlist",
+  "version": "1.0.0",
+  "description": "simple angular 2 app to show list of president names",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aritzcovan/Angular2-PresidentList.git"
+  },
+  "keywords": [
+    "Angular2",
+    "JavaScript",
+    "express.js"
+  ],
+  "author": "Alex Ritzcovan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aritzcovan/Angular2-PresidentList/issues"
+  },
+  "homepage": "https://github.com/aritzcovan/Angular2-PresidentList#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "gulp-load-plugins": "^1.2.4",
+    "nodemon": "^1.9.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1"
+  }
+}

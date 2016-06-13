@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="#p of presidents" (click)="select(p)">{{ p.name }}</li>
+</ul>
+
+  <president-detail *ngIf="selectedPresident" [president]="selectedPresident"></president-detail>
