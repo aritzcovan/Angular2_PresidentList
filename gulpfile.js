@@ -1,28 +1,10 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
-// var del = require('del');
-// var glob = require('glob');
-// var karma = require('karma').server;
-// var merge = require('merge-stream');
-// var paths = require('./gulp.config.json');
-// var plato = require('plato');
 var plug = require('gulp-load-plugins')();
 var reload = browserSync.reload;
 
-//var colors = plug.util.colors;
-//var env = plug.util.env;
-//var log = plug.util.log;
 var port = process.env.PORT || 7203;
 
-
-
-
-/**
- * Start the node server using nodemon.
- * Optionally start the node debugging.
- * @param  {Object} args - debugging arguments
- * @return {Stream}
- */
 function serve(args) {
     var options = {
         //script: paths.server + 'app.js',
@@ -32,7 +14,6 @@ function serve(args) {
             'NODE_ENV': args.mode,
             'PORT': port
         },
-        //watch: [paths.server]
         watch: ['./src/server/']
     };
 
@@ -57,9 +38,6 @@ function serve(args) {
         });
 }
 
-/**
- * Start BrowserSync
- */
 function startBrowserSync() {
     if(!env.browserSync || browserSync.active) {
         return;
@@ -84,10 +62,6 @@ function startBrowserSync() {
     });
 }
 
-/**
- * serve the dev environment
- */
-// gulp.task('serve-dev', function() {
 gulp.task('default', function() {
     serve({
         mode: 'dev'
